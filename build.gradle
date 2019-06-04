@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group = 'com.deeplearning'
+version = '0.0.1-SNAPSHOT'
+
+dependencies {
+    compile ('org.apache.logging.log4j:log4j-api:2.11.2')
+    compile ('org.apache.logging.log4j:log4j-core:2.11.2')
+    compile ('org.deeplearning4j:deeplearning4j-core:1.0.0-beta3')
+    compile ('org.deeplearning4j:deeplearning4j-ui_2.11:1.0.0-beta3')
+    compile ('org.nd4j:nd4j-native-platform:1.0.0-beta3')    
+    testImplementation ('junit:junit:4.12')
+}
+
+
